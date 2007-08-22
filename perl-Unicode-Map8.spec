@@ -12,6 +12,8 @@ Group:		Development/Perl
 Source:		http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
 Buildrequires:	perl-devel
+# (tv) for test suite:
+Buildrequires:	perl-Unicode-String
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
