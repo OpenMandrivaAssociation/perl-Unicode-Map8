@@ -14,7 +14,6 @@ Url:		http://search.cpan.org/dist/%{module}
 Buildrequires:	perl-devel
 # (tv) for test suite:
 Buildrequires:	perl-Unicode-String
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Unicode::Map8 class implement efficient mapping tables between 8-bit
