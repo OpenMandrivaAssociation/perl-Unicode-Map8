@@ -1,5 +1,5 @@
 %define upstream_name	 Unicode-Map8
-%define upstream_version 0.12
+%define upstream_version 0.13
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Mapping table between 8-bit chars and Unicode
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/%{upstream_name}-%{upstream_version}.tar.gz
 
 Buildrequires:	perl-devel
 # (tv) for test suite:
