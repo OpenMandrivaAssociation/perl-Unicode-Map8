@@ -1,14 +1,13 @@
 %define modname	Unicode-Map8
-%define modver	0.13
 
 Summary:	Mapping table between 8-bit chars and Unicode
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	20
+Version:	0.13
+Release:	21
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/%{modname}-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/%{modname}-%{version}.tar.gz
 BuildRequires:	perl-devel
 # (tv) for test suite:
 BuildRequires:	perl-Unicode-String
@@ -20,18 +19,17 @@ both in terms of space allocated and translation speed. The 16-bit strings is
 assumed to use network byte order.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
+perl Makefile.PL INSTALLDIRS=vendor
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
-# (tv) test suite failed in iurt but success with iurt --shell :-(
-#make test
+%make_build test
 
 %install
-%makeinstall_std
+%make_install
 
 %files 
 %doc README Changes
@@ -40,4 +38,3 @@ assumed to use network byte order.
 %{perl_vendorarch}/Unicode
 %{_mandir}/man1/*
 %{_mandir}/man3/*
-
