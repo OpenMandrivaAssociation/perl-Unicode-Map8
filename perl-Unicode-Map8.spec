@@ -1,4 +1,5 @@
 %define modname	Unicode-Map8
+%undefine _debugsource_packages
 
 Summary:	Mapping table between 8-bit chars and Unicode
 Name:		perl-%{modname}
