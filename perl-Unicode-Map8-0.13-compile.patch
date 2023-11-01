@@ -1,0 +1,12 @@
+diff -up Unicode-Map8-0.13/Map8.xs.omv~ Unicode-Map8-0.13/Map8.xs
+--- Unicode-Map8-0.13/Map8.xs.omv~	2023-11-01 17:50:17.869221717 +0100
++++ Unicode-Map8-0.13/Map8.xs	2023-11-01 17:50:25.202301142 +0100
+@@ -23,6 +23,8 @@ extern "C" {
+ 
+ #include "map8.h"
+ 
++extern U8* map8_recode8(Map8* m1, Map8* m2, U8* from, U8* to, int len, int* rlen);
++
+ /* Some renaming that helps avoiding name class with the Perl versions
+  * of the constructors
+  */
