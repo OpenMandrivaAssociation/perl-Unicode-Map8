@@ -7,7 +7,7 @@ Version:	0.13
 Release:	23
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/%{modname}-%{version}.tar.gz
 Patch0:		perl-Unicode-Map8-0.13-compile.patch
 BuildRequires:	perl-devel
