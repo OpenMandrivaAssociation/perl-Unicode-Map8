@@ -4,7 +4,7 @@
 Summary:	Mapping table between 8-bit chars and Unicode
 Name:		perl-%{modname}
 Version:	0.13
-Release:	23
+Release:	24
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
