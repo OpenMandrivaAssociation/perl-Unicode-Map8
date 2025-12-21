@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/%{modname}-%{version}.tar.gz
 Patch0:		perl-Unicode-Map8-0.13-compile.patch
+BuildRequires:	make
 BuildRequires:	perl-devel
 # (tv) for test suite:
 BuildRequires:	perl-Unicode-String
